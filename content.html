@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@200&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Bigoted Times- References</title>
+    <style>
+        body{
+            background: #161513 ;
+        }
+        #logo{
+            background-image: url(images/fist.png);
+        }
+        #ref{
+            background-image: url(images/open-book.png)
+        }
+        .p-3{
+            background-size: contain;
+            background-repeat: no-repeat
+        }
+        .col-6{
+            padding: 14px 10px;
+        }
+        .col-12{
+            background-color: rgba(0,0,0,1);
+        }
+        .col-sm-6{
+            background-color: transparent;
+            height: 400px ;
+            margin-right: auto;
+            margin-left: auto;
+            
+        }
+        li{
+            font-family: 'Poppins', sans-serif;
+        }
+        span{
+            font-weight: 600;
+        }
+        .bbox{
+            background-color: transparent;
+            height: inherit;
+            width: inherit;
+            padding: 6%;
+            text-indent: 18px;
+        }
+
+        @media  only screen and (max-width: 425px){
+             #flip .col-sm-6{
+                background: url(images/covid.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                animation-name: pulse;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease;
+                
+            }
+            #flip #v2{
+                background: url(images/covid2.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 0;
+            }
+            @keyframes pulse{
+                0%{transform: scale(1);}
+                50%{transform: scale(1.03);}
+                100%{transform: scale(1);}
+
+            }
+            .bbox{
+                float: right;
+                background-color: transparent;
+            }
+            p{
+                font-size: 14px;
+                font-family: 'Lora', serif;
+            }
+             h2{
+                font-size: 20px;
+                font-family: 'Monserrat', sans-serif;
+                
+            }
+
+        }
+        .col-md-6{
+            text-align: right;
+        }
+        .container{
+            margin: auto;
+        }
+        h1, h2, h3, h4, p, ul, li{
+            color: #f1d3bf;
+            animation-name: fade;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            
+        }
+        
+        @keyframes fade{
+            0%{opacity: 0; transform: translateY(10px);}
+            10%{opacity: 0.1;transform: translateY(9px)}
+            20%{opacity: 0.2;transform: translateY(8px)}
+            30%{opacity: 0.3;transform: translateY(7px)}
+            40%{opacity: 0.4;transform: translateY(6px)}
+            50%{opacity: 0.5;transform: translateY(5px)}
+            60%{opacity: 0.6;transform: translateY(4px)}
+            70%{opacity: 0.7;transform: translateY(3px)}
+            80%{opacity: 0.8;transform: translateY(2px)}
+            90%{opacity: 0.9;transform: translateY(1px)}
+            100%{opacity: 1;transform: translateY(0px)}
+            
+        }
+        h1{
+            font-family: 'Montserrat', sans-serif;
+        }
+        #heading h1{
+            font-family: 'Lora', serif;
+        }
+        @media only screen and (max-width: 768px){
+            h1{
+                font-size: 48px;
+            }
+            
+        }
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 4.5px;
+            font-weight: 700;
+        }
+        h2{
+            font-family: 'Loras', serif;
+        }
+        .bbox h2{
+            font-family: 'Montserrat', sans-serif;
+        }
+        @media only screen and (max-width: 425px){
+            h3{
+                font-size: 20px;
+            }
+            h1{
+                font-size: 26px;
+                margin-top: 20%;
+            }
+            h2{
+                font-size: 28px;
+            }
+            .twos p{
+                font-size: 18px;
+            }
+            .col-8{
+                width: 200px;
+            }
+        }
+        .duts{
+            background: url(images/section.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -999;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+        }
+        .twos p{
+            font-family: 'Work sans', sans-serif;
+        }
+   
+        @media only screen and (min-width: 425.1px){
+            #bay{
+                background: url(https://assets2.rappler.com/2020/09/1600662616-manila-bay-dolomite-opening-september-19-2020-010.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-blend-mode: multiply;
+                background-color: #2A2729;
+
+                
+            }
+            #v2{
+                background: url(https://1.bp.blogspot.com/-7zyB66Sah-4/X3mYxpCUAAI/AAAAAAACQ2o/xGcQCTzGSGwi771sn3Sy3wURY7GGMFKrgCLcBGAsYHQ/s960/FB_IMG_1601791060357.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-blend-mode: multiply;
+                background-color: #2A2729;
+            }
+            
+        
+        #vi{
+            background: url(https://files01.pna.gov.ph/ograph/2020/10/14/49a5427.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-blend-mode: multiply;
+                background-color: #2A2729;
+                background-size: cover;
+        }
+        }
+        @media only screen and (min-width: 575.1px){
+            .spin h1{
+                font-size: 30px;
+            }
+        }
+        @media only screen and  (max-width: 425px){
+            .spin p{
+                width: 250px;
+            }
+        }
+        .one{
+            background: url(images/1response.png);
+            width: auto;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: WHEAT;
+            transition: 0.5s ease;
+            border-bottom: 1px solid grey;
+        }
+        .two{
+            background: url(images/imask.png);
+            width: auto;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: WHEAT;
+            transition: 0.5s ease;
+            border-bottom: 1px solid grey;
+        }
+        .three{
+            background: url(images/ifrontliner.png);
+            width: auto;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: WHEAT;
+            transition: 0.5s ease;
+            border-bottom: 1px solid grey;
+        
+        }
+        .one:hover{
+            background-color: orangered;
+            
+        }
+        .two:hover{
+            background-color: darkred;
+        }
+        .three:hover{
+            background-color: orangered;
+        }
+        .bgimg-2 {
+          background-image: url("images/bay.jpg"); background-position: center; background-size: cover; background-color: gray; background-blend-mode: multiply;
+          min-height: 300px;
+            
+        
+        }
+
+        .bgimg-3 {
+          background-image: url("images/full.jpg"); background-position: center; background-size: cover; background-color: gray; background-blend-mode: multiply;
+          min-height: 300px;
+        }
+        .bgimg-4 {
+          background-image: url("images/hotels.jpg"); background-position: center; background-size: cover; background-color: gray; background-blend-mode: multiply;
+          min-height: 300px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        h1{
+            margin-top: 28px;
+        }
+        .ref a{
+            text-decoration: underline;
+            color: white;
+            vertical-align: center; 
+        }
+        .ref h3{
+            display: block;
+            margin: auto;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding-top: 30%;
+        }
+        .ref .col-md-4{
+            border: 1px solid lightgray;
+        }
+</style>
+    </head>
+<body>
+    
+    
+        <div class="container-fluid duts" style="background: none">
+        <div class="row justify-content-center header" style="z-index: 999">
+            <div class="col" style="padding-top: 5%;">
+                        
+                                <img class="logo d-block m-auto" src="images/fist.png" alt="Logo" title="Logo" style="height: 30px;">
+                    
+                </div>
+            <div class="col" style="text-align: center; margin-top: 4%;">
+                    <h3>BIGOTED TIMES</h3>
+                <p>READ MORE AND REFERENCES PAGE</p>
+            </div>
+                
+            <div class="col" style="padding-top: 5%;">
+                        
+                                <a href="index.html">
+                                    <img class="book d-block m-auto" src="images/home.png" alt="Home" title="Home" style="height: 30px; ">
+                                    </a>
+                        
+            </div>            
+            </div>
+            </div>
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-4" >
+                    <a href="https://en.wikipedia.org/wiki/Philippine_government_response_to_the_COVID-19_pandemic" target="_blank">
+                        <div class="one"></div></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks" target="_blank">
+                        <div class="two"></div></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.worldometers.info/coronavirus/country/philippines/" target="_blank">
+                        <div class="three"></div></a>
+                </div>
+                
+            
+            </div>
+            <h1>REFERENCES</h1>
+            <div class="row ref">
+
+                <div class="bgimg-2 col-md-4" >
+                    <a href="https://www.cnn.ph/news/2020/9/19/manila-bay-white-beach-crowd.html" target="_blank">
+                    <h3>Manila Bay Public Opening</h3>
+                        
+                            
+                        </a>
+                </div>
+                <div class="bgimg-3 col-md-4">
+                    <a href="https://www.philstar.com/headlines/2020/07/15/2028141/more-hospitals-nearing-full-capacity" target="_blank">
+                    <h3>Support our frontliners!</h3>
+                        
+                            
+                        </a>
+                </div>
+                <div class="bgimg-4 col-md-4">
+                    <a href= "https://newsinfo.inquirer.net/1350636/fwd-dot-hotels-allowed-to-operate-at-full-capacity-in-gcq-mgcq-areas." target="_blank">
+                    <h3>Hotels Allowed to operate at full capacity</h3>
+                        
+                            
+                        </a>
+                </div>
+                
+            
+            </div>
+
+                </div>
+    
+                
+    </body>
+</html>

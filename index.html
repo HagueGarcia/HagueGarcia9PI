@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@200&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>The Irony of the Iron Fists</title>
+    <style>
+        body{
+            background: #161513 ;
+        }
+        #logo{
+            background-image: url(images/fist.png);
+        }
+        #ref{
+            background-image: url(images/open-book.png)
+        }
+        .p-3{
+            background-size: contain;
+            background-repeat: no-repeat
+        }
+        .col-6{
+            padding: 14px 10px;
+        }
+        .col-12{
+            background-color: rgba(0,0,0,1);
+        }
+        .col-sm-6{
+            background-color: transparent;
+            height: 400px ;
+            margin-right: auto;
+            margin-left: auto;
+            
+        }
+        li{
+            font-family: 'Poppins', sans-serif;
+        }
+        span{
+            font-weight: 600;
+        }
+        .bbox{
+            background-color: transparent;
+            height: inherit;
+            width: inherit;
+            padding: 6%;
+            text-indent: 18px;
+        }
+
+        @media  only screen and (max-width: 425px){
+             #flip .col-sm-6{
+                background: url(images/covid.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                
+                
+            }
+            #flip #v2{
+                background: url(images/covid2.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 0;
+            }
+            }
+            .bbox{
+                float: right;
+                background-color: transparent;
+            }
+            p{
+                font-size: 14px;
+                font-family: 'Lora', serif;
+            }
+             h2{
+                font-size: 20px;
+                font-family: 'Monserrat', sans-serif;
+                
+            }
+
+        }
+        .col-md-6{
+            text-align: right;
+        }
+        .container{
+            margin: auto;
+        }
+        h1, h2, h3, h4, p, ul, li{
+            color: #f1d3bf;
+            animation-name: fade;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            
+        }
+        
+        @keyframes fade{
+            0%{opacity: 0; transform: translateY(10px);}
+            10%{opacity: 0.1;transform: translateY(9px)}
+            20%{opacity: 0.2;transform: translateY(8px)}
+            30%{opacity: 0.3;transform: translateY(7px)}
+            40%{opacity: 0.4;transform: translateY(6px)}
+            50%{opacity: 0.5;transform: translateY(5px)}
+            60%{opacity: 0.6;transform: translateY(4px)}
+            70%{opacity: 0.7;transform: translateY(3px)}
+            80%{opacity: 0.8;transform: translateY(2px)}
+            90%{opacity: 0.9;transform: translateY(1px)}
+            100%{opacity: 1;transform: translateY(0px)}
+            
+        }
+        h1{
+            font-family: 'Montserrat', sans-serif;
+        }
+        #heading h1{
+            font-family: 'Lora', serif;
+        }
+        @media only screen and (max-width: 768px){
+            h1{
+                font-size: 48px;
+            }
+            
+        }
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 4.5px;
+            font-weight: 700;
+        }
+        h2{
+            font-family: 'Loras', serif;
+        }
+        .bbox h2{
+            font-family: 'Montserrat', sans-serif;
+        }
+        @media only screen and (max-width: 425px){
+            h3{
+                font-size: 20px;
+            }
+            h1{
+                font-size: 26px;
+                margin-top: 20%;
+            }
+            h2{
+                font-size: 28px;
+            }
+            .twos p{
+                font-size: 18px;
+            }
+            .col-8{
+                width: 200px;
+            }
+        }
+        .duts{
+            background: url(images/section.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -999;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+        }
+        .twos p{
+            font-family: 'Work sans', sans-serif;
+        }
+   
+        @media only screen and (min-width: 425.1px){
+            #bay{
+                background: url(https://assets2.rappler.com/2020/09/1600662616-manila-bay-dolomite-opening-september-19-2020-010.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-blend-mode: multiply;
+                background-color: orangered;
+
+                
+            }
+            #v2{
+                background: url(https://1.bp.blogspot.com/-7zyB66Sah-4/X3mYxpCUAAI/AAAAAAACQ2o/xGcQCTzGSGwi771sn3Sy3wURY7GGMFKrgCLcBGAsYHQ/s960/FB_IMG_1601791060357.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-blend-mode: multiply;
+                background-color: darkmagenta;
+            }
+            
+        
+        #vi{
+            background: url(https://files01.pna.gov.ph/ograph/2020/10/14/49a5427.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-blend-mode: multiply;
+                background-color: deeppink;
+                background-size: cover;
+        }
+        }
+        @media only screen and (min-width: 575.1px){
+            .spin h1{
+                font-size: 30px;
+            }
+        }
+        @media only screen and  (max-width: 425px){
+            .spin p{
+                width: 250px;
+            }
+        }
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="container-fluid duts">
+        <div class="row justify-content-center header" style="z-index: 999">
+            <div class="col" style="padding-top: 5%;">
+                        
+                                <img class="logo d-block m-auto" src="images/fist.png" alt="references" title="references" style="height: 30px;">
+                    
+                </div>
+            <div class="col" style="text-align: center; margin-top: 4%;">
+                    <h3>BIGOTED TIMES</h3>
+                
+            </div>
+                
+            <div class="col" style="padding-top: 5%; ">
+                        
+                                <a href="content.html">
+                                    <img class="book d-block m-auto" src="images/open-book.png" alt="references" title="references" style="height: 30px;">
+                                    </a>
+                        
+                </div>
+
+        </div>
+        <!-- Heading-->
+        <div class="row justify-content-center" id="heading" >
+            <div class="col-12" style="height: 300px; text-align: center; margin-top: 15%; background: transparent; z-index: 99;">
+                <h1> The Irony of the Iron Fists</h1>
+            </div>
+        </div>
+    
+                    <div class="gradi" style="background: rgb(22,21,19);background: linear-gradient(0deg, rgba(22,21,19,1) 19%, rgba(22,21,19,0) 100%); height: 100px; z-index: 9999999; width: 100%"></div></div>
+
+    <!-- Article-->
+
+
+    
+    <div class="container">
+        <div class="row" style="margin-top: 10% ; margin-right: 0; margin-left: auto;">
+
+                <div class="col-md-6 twos" style="background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/COVID-19_pandemic_cases_in_the_Philippines.svg/220px-COVID-19_pandemic_cases_in_the_Philippines.svg.png); background-repeat: no-repeat; height: 300px; background-color: #5F0F40; background-blend-mode: hard-light; text-align: right">
+                    <h1>CASES</h1>
+                    <p style="padding-top: 20px;">
+                    As of October 23, 2020 there has been a massive number of <span>366,000</span> cases confiremed in the Philippines
+                    
+                    </p>
+                    </div>
+                <div class="col-md-6 twos" style="background: url(https://images.yourstory.com/cs/2/a0bad530ce5d11e9a3fb4360e4b9139b/Imageyxyc-1584029382208.jpg); background-color: magenta; background-blend-mode: darken; height: 300px; text-align: right">
+                    <h1>DEATHS</h1>
+                    <p style="padding-top: 20px;">
+                     including the 6,915 total deaths 
+                    
+                    
+                    </p>
+                    </div>
+        </div>
+        <div class="row spin" style="margin-top: 10%; margin-right: auto;
+                                margin-left: auto">
+        
+                <div class="col-sm-4" style="height: auto;">
+                        
+                        <h1>Questionable pandemic response</h1>
+                    </div>
+                <div class="col-8" style="padding: 20px 25px; border-left: 3px dotted #f1d3bf; height: auto; ; ;">
+                        <h2>The Frightening Statistics</h2>
+                        <p>
+                         caused an abominable terror that drastically changed how we live in the new normal today. Up until now,<span> quarantine protocols</span> are being strictly implemented nationally to reduce the risk of community transmission. But is it really the true motive behind all these months of lockdown, or is it just another <span>enactment to manipulate the citizens</span>  of our nation?
+                    
+                        </p>
+                    
+                    </div>
+        
+        
+        </div>
+        <!--The fun part-->
+        <!-- This part turns into a virus when you make gamit a small screen-->
+        <div class="row" id="flip" style="margin-top: 10%;">
+            <div class="col-sm-6" id="bay" >
+                <div class="bbox">
+                    <h2> If COVID-19 is real, </h2>
+                    <p>how come there are still groups of individuals going out as if everything is normal? If you try to go out you are still able to see unprotected minors and even senior citizens taking a stroll. Nevertheless, there was even a public opening of the Manila bay last September 19, 2020. It must be a surprise why the case statistics have shown a recent increase.</p>
+                    </div>
+                </div>
+            <div class="col-sm-6" id="v2">
+                <div class="bbox" style="float: left">
+                    <h2> If COVID-19 is real, </h2>
+                    <p>
+                    how come our law makers are the ones breaking their own implementations? The controversial news about the PNP chief’s celebration had gone viral and received criticism online. But even in the face of violated quarantine protocols, Sinas still defended that they did not disobey any rules. 
+                    <br>If they were taking this pandemic seriously they would have set a better example as national leaders.
+                    
+                    </p>
+                    </div>
+                </div>
+
+            <div class="col-sm-6" id="vi" style="margin: auto; margin-top: 18px;">
+                <div class="bbox">
+                    <h2>If COVID-19 is real</h2>
+                    <p>
+                    how come we are easing protocols amidst the spike in confirmed cases? Just recently, the Department of Tourism allowed hotels to operate at full capacity around GCQ and MGCQ areas. <br>With over 3% of the population getting infected, the management is pursuing to reduce strictness of quarantine protocols. Age restrictions are now lowered to 15-65 years old. More people are being encouraged more to go out of their houses, as if it were normal.
+                    
+                    </p>
+                    </div>
+            
+                </div>
+            
+            
+        </div>
+        <div class="row" style="margin-top: 12%; ">
+            <div class="col-12" style="padding: 15px;
+                                       text-align: left;
+                                       height: auto;
+                                       background-color: #0A0A0A;">
+                <img src="https://media.beam.usnews.com/78/80090c9ffab6ae6f7eec71969a0b7c/media:89336c1248454e39a9619fb0ded0e3b0Philippines_Politics_02404.jpg" alt="The cry of the masses; Pre-SONA" style="     
+                                        width: inherit;
+                                        background-position: center;
+                                        ">
+            <h2 style="font-family: 'Montserrat', sans-serif; text-align: left; padding-left: 8px"><br>There is nothing to worry about,</h2>
+            <p style="padding: 20px;"> in fact our situation is so unwavering that the Department of Budget and Management decided to<span> slash the budget allocations</span> for the DOH and DOST so low. <br><br>The President is sponsoring his military doggies more than the unsupported health workers of our nation. Additionally, during community quarantine our government has been more focused on<span> shutting down television networks, approving bills that were made to restrain press freedom, and dumping toxic soil into bays.</span> To sum all this up, the people and the regime’s response to Covid-19 shows one thing:
+                </p>
+                
+            </div>
+        </div></div>
+    <div class="container" style="background: #5F0F40; margin-top: 15px; background: rgb(161,9,127);
+background: radial-gradient(circle, rgba(161,9,127,1) 32%, rgba(95,15,64,1) 100%);">
+        <div class="container">
+        <div class="row" style="margin-top: 12%; text-align: center; padding: 10px; ">
+            <div class="col-12" style="padding: 10px;
+                                       background:none;">
+            <h2 style="font-family: 'Montserrat', sans-serif; color: orangered;">THE PANDEMIC IS FAKE</h2>
+            <p>Coronavirus is a business of the Filipino government to invisibly <span>exploit</span> the country by spreading fear, and upholding their personal and political propaganda. They use the advantage of not worrying about the masses starting a revolution. It is only used to <span> psychologically frighten </span>Filipinos to make them obey everything the puppet regime is executing. The pandemic is beneficial to alcohol producers, facemask manufacturers, the Philippine Health institute, and most especially <span>corrupt officials</span>
+                </p>
+               
+            </div></div></div>
+            <div class="container">
+            <div class="row" style="margin-top: 12%; height: auto; border-radius: 20px; background-color: #161513;">
+                    <div class="col-12" style="height: auto; text-align: center; background: none">
+                        <h2 style="padding-top: 18px; font-family: 'Montserrat', sans-serif; color: orange">A NEW PANDEMIC RESPONSE</h2></div>
+                    <div class="col-sm-6" style="height: auto;">
+                        <h2>
+                            Solutions:
+                        </h2>
+                        <ul>
+                            <li>Remove fear and go out</li>
+                            <li>Resume normal lifestyle</li>
+                            <li>Celebrate birthday parties</li>
+                            <li>Grant more unethical laws</li>
+                            <li>Manila bay party</li>
+                            <li>Trash all subsequent pandemic rules</li>
+                            <li>Forget swab tests</li>
+                            <li>Cough at politicians</li>
+                        </ul>
+
+                        </div>
+
+                    <div class="col-sm-6" style="border-left: 3px dotted wheat; background: none; height: auto">
+                        <h2>
+                            Advantages:
+                        </h2>
+                        <ul>
+                            <li>Revival of the Philippine economic system</li>
+                            <li>Employment rates back up</li>
+                            <li>Good for mental health</li>
+                            <li>We can socialize again</li>
+                            <li>Physical exercise</li>
+                            <li>Makes no difference</li>
+                            <li>Nemo will find the lost pandemic funds</li>
+                            <li>Modeled by our officials</li>
+                        </ul>
+
+                        </div>   
+
+            </div>
+        </div></div>
+
+    
+
+
+    <script>
+        window.addEventListener('scroll', function(){
+        const h1 = document.querySelector('h1');
+        let scrollPosition = window.pageYOffset;
+        
+        h1.style.transform= 'translateY(' + scrollPosition * 0.58 + 'px)';
+        });
+
+
+       
+    </script>
+</body>
+</html>
